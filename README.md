@@ -1,84 +1,70 @@
-<<<<<<< HEAD
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# Team-269-Backend
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+[![Codacy Badge](https://img.shields.io/badge/Code%20Quality-D-red)](https://img.shields.io/badge/Code%20Quality-D-red)
 
-## About Laravel
+API for data collection app to measure proportion of urban population living in slums, informal settlements or inadequate housing
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## About
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+A data collection app to measure proportion of urban population living in slums, informal settlements or inadequate housing.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Why
 
-## Learning Laravel
+Data gaps across the African continent threaten to hinder the achievement of the Sustainable Development Goals and the African Union’s Agenda 2063. According to the United Nations, 68% of the SDG indicators lack data. This makes it difficult to measure progress on achievement of SDGs.The absence of high quality data on various indicators makes it difficult for policy makers and other stakeholders to plan and make informed decisions. 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The number of people living in urban areas is rapidly increasing globally. However, cities and urban areas are not coping with the influx of people and the rate of urbanization. It is estimated that 1 billion people live in slums globally.
+Many countries do not have adequate data on the proportion of the population that live in slums who need adequate housing, which is a basic human right. 
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Our solution will therefore help to address SDG 17 and SDG 11, indicator 11.1.1: Proportion of urban population living in slums
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Usage
+ How would someone use what you have built, include URLs to the deployed app, service e.t.c when you have it setup
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
+
+## Setup
+
+Run `composer install` and `composer dump-autoload` to get started.
+
+`index.php` is the entry to the project and source code should go into the `src` folder.
+
+All tests should be written in the test folder.
+
+#### Hints
+
+- Test: `composer run test`
+- Install dependencies: `composer install <dep name>`
+- Lint: `composer run php-cs-fixer`
+
+## Authors
+
+- Mentor: Lewis Tanguhwa
+- TTL: Bright Onapito 
+- Product Manager: Henry Mutegeki
+
+#### Backend Engineers
+- [Eugene Owak](https://github.com/geneowak)
+- [Victor Otim](https://github.com/victor-otim)
+- [Philbert Obuchel](https://github.com/philbertobuchel)
+- [Bright Onapito](https://github.com/onabright)
+
+
 
 ## Contributing
+If this project sounds interesting to you and you'd like to contribute, thank you!
+First, you can send a mail to buildforsdg@andela.com to indicate your interest, why you'd like to support and what forms of support you can bring to the table, but here are areas we think we'd need the most help in this project :
+1.  area one (e.g this app is about human trafficking and you need feedback on your roadmap and feature list from the private sector / NGOs)
+2.  area two (e.g you want people to opt-in and try using your staging app at staging.project-name.com and report any bugs via a form)
+3.  area three (e.g here is the zoom link to our end-of sprint webinar, join and provide feedback as a stakeholder if you can)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Acknowledgements
 
-## Code of Conduct
+### Source code
+Add credits
+### Articles and reports
+- [Devex](https://www.devex.com/news/data-gaps-threaten-achievement-of-development-goals-in-africa-95825)
+- [Open Data Watch Report: Mapping Gender Data Availability in Africa](https://opendatawatch.com/monitoring-reporting/bridging-gender-data-gaps-in-africa/)
+- [TRENDS Report: Counting on the World to Act](https://countingontheworld.sdsntrends.org/)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-# Team-269-Backend
-API for data collection app to measure proportion of urban population living in slums, informal settlements or inadequate housing
->>>>>>> 2e08ea3e49d7eca09ba145600fee184ca8bb9fa8
+## LICENSE
+MIT
