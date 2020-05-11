@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
@@ -77,3 +78,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# Team-269-Backend
+API for data collection app to measure proportion of urban population living in slums, informal settlements or inadequate housing
+>>>>>>> 2e08ea3e49d7eca09ba145600fee184ca8bb9fa8
