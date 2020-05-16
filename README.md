@@ -47,7 +47,7 @@ All tests should be written in the test folder.
 - [Victor Otim](https://github.com/victor-otim)
 - [Philbert Obuchel](https://github.com/philbertobuchel)
 - [Bright Onapito](https://github.com/onabright)
-
+- [Julius Ssemakula](https://github.com/microsoftjulius)
 
 
 ## Contributing
