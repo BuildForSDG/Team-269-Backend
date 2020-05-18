@@ -2,8 +2,14 @@
 
 namespace App\Exceptions;
 
-use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
+use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Http\Exceptions\ThrottleRequestsException;
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
+use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 
 class Handler extends ExceptionHandler
 {
@@ -13,7 +19,6 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
-        //
     ];
 
     /**
@@ -50,6 +55,30 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
+        if ($exception instanceof ModelNotFoundException) {
+            return response()->json(
+                ['message' => sprintf('Resource item for %s not found.', class_basename($exception->getModel()))],
+                404
+            );
+        }
+        if ($exception instanceof NotFoundHttpException) {
+            return response()->json(['message' => 'Resource not found.'], 404);
+        }
+        if ($exception instanceof MethodNotAllowedHttpException) {
+            return response()->json(['message' => 'Method not allowed.'], 405);
+        }
+
+        if ($exception instanceof UnauthorizedHttpException) {
+            return response()->json(['message' => 'You are not authorized to view this page'], 401);
+        }
+        if ($exception instanceof AuthorizationException) {
+            return response()->json(['message' => 'You are not authorized to view this resource'], 403);
+        }
+
+        if ($exception instanceof ThrottleRequestsException) {
+            return response()->json(['message' => 'Too Many Attempts.'], 429);
+        }
+
         return parent::render($request, $exception);
     }
 }
