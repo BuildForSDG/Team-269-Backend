@@ -14,7 +14,6 @@ parameters:
         - 'storage/*'
         - 'public/*'
         - 'bootstrap/*'
-        - 'tests/*'
     skip:
         PhpCsFixer\Fixer\PhpUnit\PhpUnitStrictFixer: ~
         PhpCsFixer\Fixer\Import\OrderedImportsFixer: ~
@@ -22,3 +21,5 @@ parameters:
         PHP_CodeSniffer\Standards\Generic\Sniffs\CodeAnalysis\AssignmentInConditionSniff.Found: ~
         PhpCsFixer\Fixer\Phpdoc\PhpdocNoEmptyReturnFixer: ~
         PhpCsFixer\Fixer\Phpdoc\NoSuperfluousPhpdocTagsFixer: ~
+        PhpCsFixer\Fixer\PhpUnit\PhpUnitMethodCasingFixer: ~
+        PhpCsFixer\Fixer\PhpUnit\PhpUnitTestAnnotationFixer: ~
