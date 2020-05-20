@@ -1,5 +1,6 @@
 # Team-269-Backend
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/27dcc4acfa9c4d8f95f058acd398a058)](https://app.codacy.com/gh/BuildForSDG/Team-269-Backend?utm_source=github.com&utm_medium=referral&utm_content=BuildForSDG/Team-269-Backend&utm_campaign=Badge_Grade_Settings)
 [![Codacy Badge](https://img.shields.io/badge/Code%20Quality-D-red)](https://img.shields.io/badge/Code%20Quality-D-red)
 
 API for data collection app to measure proportion of urban population living in slums, informal settlements or inadequate housing
@@ -84,10 +85,11 @@ To setup this project on your computer, follow these steps:
 
 #### Backend Engineers
 
--   [Eugene Owak](https://github.com/geneowak)
--   [Victor Otim](https://github.com/victor-otim)
--   [Philbert Obuchel](https://github.com/philbertobuchel)
--   [Bright Onapito](https://github.com/onabright)
+- [Eugene Owak](https://github.com/geneowak)
+- [Victor Otim](https://github.com/victor-otim)
+- [Philbert Obuchel](https://github.com/philbertobuchel)
+- [Bright Onapito](https://github.com/onabright)
+- [Julius Ssemakula](https://github.com/microsoftjulius)
 
 ## Contributing
 
