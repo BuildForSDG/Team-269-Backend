@@ -1,0 +1,25 @@
+imports:
+    - { resource: 'vendor/symplify/easy-coding-standard/config/set/clean-code.yaml' }
+    - { resource: 'vendor/symplify/easy-coding-standard/config/set/psr2.yaml' }
+    - { resource: 'vendor/symplify/easy-coding-standard/config/set/common.yaml' }
+
+services:
+    # arrays
+    PHP_CodeSniffer\Standards\Generic\Sniffs\Arrays\DisallowLongArraySyntaxSniff: ~
+parameters:
+    exclude_files:
+        - '*/node_modules/*'
+        - '*/vendor/*'
+        - 'resources/*'
+        - 'storage/*'
+        - 'public/*'
+        - 'bootstrap/*'
+    skip:
+        PhpCsFixer\Fixer\PhpUnit\PhpUnitStrictFixer: ~
+        PhpCsFixer\Fixer\Import\OrderedImportsFixer: ~
+        PhpCsFixer\Fixer\ClassNotation\OrderedClassElementsFixer: ~
+        PHP_CodeSniffer\Standards\Generic\Sniffs\CodeAnalysis\AssignmentInConditionSniff.Found: ~
+        PhpCsFixer\Fixer\Phpdoc\PhpdocNoEmptyReturnFixer: ~
+        PhpCsFixer\Fixer\Phpdoc\NoSuperfluousPhpdocTagsFixer: ~
+        PhpCsFixer\Fixer\PhpUnit\PhpUnitMethodCasingFixer: ~
+        PhpCsFixer\Fixer\PhpUnit\PhpUnitTestAnnotationFixer: ~
