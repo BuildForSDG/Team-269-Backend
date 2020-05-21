@@ -14,13 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return response()->json('Welcome to the Slum Data API');
-});
+Route::get('/', 'HomeController@index');
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::middleware('auth:api')->get('/user', 'AuthenticationController@authUser');
 
 // authentication endpoints
 Route::prefix('auth')->group(base_path('routes/auth.php'));
