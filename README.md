@@ -26,20 +26,20 @@ How would someone use what you have built, include URLs to the deployed app, ser
 
 To setup this project on your computer, follow these steps:
 
-1. clone the repo onto your computer
-2. change directory to the project directory i.e `cd [project-folder]`
-3. create a `.env` file and copy and paste all the contents of the `.env.example` file into the new file. Change the following details
-    1. `db_name` - the name of the database
-    2. `db_user` - the database user
-    3. `db_password` - the password of the database user
-4. run the following commands
-    1. `composer install` - to install all the dependencies.
-    2. `php artisan key:generate` - to generate the application key (used for encryption).
-    3. `php artisan jwt:secret` - to generate the secret key that will be used for creating auth tokens.
-    4. `php artisan migrate` - to run the database migrations.
-5. to start the app, simply run `php artisan serve` from within the root of the project i.e
-    1. `cd [project-folder]`
-    2. `php artisan serve`
+1.  clone the repo onto your computer
+2.  change directory to the project directory i.e `cd [project-folder]`
+3.  create a `.env` file and copy and paste all the contents of the `.env.example` file into the new file. Change the following details
+    1.  `db_name` - the name of the database
+    2.  `db_user` - the database user
+    3.  `db_password` - the password of the database user
+4.  run the following commands
+    1.  `composer install` - to install all the dependencies.
+    2.  `php artisan key:generate` - to generate the application key (used for encryption).
+    3.  `php artisan jwt:secret` - to generate the secret key that will be used for creating auth tokens.
+    4.  `php artisan migrate` - to run the database migrations.
+5.  to start the app, simply run `php artisan serve` from within the root of the project i.e
+    1.  `cd [project-folder]`
+    2.  `php artisan serve`
 
 ## Available endpoints
 
@@ -79,13 +79,13 @@ To setup this project on your computer, follow these steps:
 -   TTL: Bright Onapito
 -   Product Manager: Henry Mutegeki
 
-#### Backend Engineers
+### Backend Engineers
 
-- [Eugene Owak](https://github.com/geneowak)
-- [Victor Otim](https://github.com/victor-otim)
-- [Philbert Obuchel](https://github.com/philbertobuchel)
-- [Bright Onapito](https://github.com/onabright)
-- [Julius Ssemakula](https://github.com/microsoftjulius)
+-   [Eugene Owak](https://github.com/geneowak)
+-   [Victor Otim](https://github.com/victor-otim)
+-   [Philbert Obuchel](https://github.com/philbertobuchel)
+-   [Bright Onapito](https://github.com/onabright)
+-   [Julius Ssemakula](https://github.com/microsoftjulius)
 
 ## Contributing
 
