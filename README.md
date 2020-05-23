@@ -17,7 +17,6 @@ Many countries do not have adequate data on the proportion of the population tha
 
 Our solution will therefore help to address SDG 17 and SDG 11, indicator 11.1.1: Proportion of urban population living in slums.
 
-
 ## Usage
 
 How would someone use what you have built, include URLs to the deployed app, service e.t.c when you have it setup
@@ -41,6 +40,12 @@ To setup this project on your computer, follow these steps:
     1.  `cd [project-folder]`
     2.  `php artisan serve`
 
+## Accessing the API
+
+The API is hosted on Heroku and can be accessed from the following endpoint
+
+-   `https://b4sdg-team269.herokuapp.com/`
+
 ## Available endpoints
 
 | **Type** | **Endpoint**                |
@@ -58,12 +63,12 @@ To setup this project on your computer, follow these steps:
 | PUT      | `api/v1/users/{user}`       |
 | DELETE   | `api/v1/users/{user}`       |
 
-## Test data
+## Test User details
 
 ```json
 {
-	"email": "example@256.com",
-	"password": "password"
+    "email": "example@256.com",
+    "password": "password"
 }
 ```
 

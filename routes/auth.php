@@ -3,7 +3,7 @@
 Route::middleware('auth')->group(function () {
     Route::post('logout', 'AuthenticationController@logout')->name('auth.logout');
     Route::post('refreshToken', 'AuthenticationController@refresh')->name('auth.refresh');
-    Route::get('user', 'AuthenticationController@authUser')->name('auth.refresh');
+    Route::get('user', 'AuthenticationController@authUser')->name('auth.user');
     Route::put('resetPassword', 'AuthenticationController@resetPassword')->name('auth.resetPassword');
 });
 // Guest routes
