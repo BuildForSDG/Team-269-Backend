@@ -69,8 +69,9 @@ class User extends Authenticatable implements JWTSubject
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * one to many: user can submit many survey responses
      */
-    //one to many: user can submit many survey responses
+
     public function surveyResponse()
     {
         return $this->hasMany(SurveyResponse::class);

@@ -15,4 +15,14 @@ class SurveyResponse extends Model
     {
         return $this->hasMany(Question::class);
     }
+
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     * Get the user who submitted the survey response
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
