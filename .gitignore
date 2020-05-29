@@ -35,4 +35,5 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+config/database.php
 >>>>>>> 2e08ea3e49d7eca09ba145600fee184ca8bb9fa8
