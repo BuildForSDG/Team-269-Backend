@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Location extends Model
+class SurveyLocation extends Model
 {
     /**
      * A location belongs to a district.

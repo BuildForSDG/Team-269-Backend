@@ -18,6 +18,7 @@ class CreateSurveyLocationsTable extends Migration
             $table->string('location_name');
             $table->string('district_division_id');
             $table->string('location_type')->default('slum');
+            $table->unique('location_name', 'district_division_id');
             $table->softDeletes();
             $table->timestamps();
         });
