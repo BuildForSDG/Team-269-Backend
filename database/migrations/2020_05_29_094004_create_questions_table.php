@@ -15,7 +15,10 @@ class CreateQuestionsTable extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->id('id');
-            $table->string('name');
+            // how the question will be presented on the form e.g What is your gender?, where do you stay?
+            $table->string('statement');
+            // the data we need e.g gender, location...
+            $table->string('name')->unique();
             $table->softDeletes();
             $table->timestamps();
         });
