@@ -4,15 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SurveyResponse extends Model
+class DistrictDivision extends Model
 {
     /**
-     * A survey response belongs to a question
+     * A district division belongs to a district.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function question()
+    public function district()
     {
-        return $this->belongsTo(Question::class);
+        return $this->belongsTo(District::class);
     }
 }

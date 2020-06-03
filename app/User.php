@@ -60,6 +60,7 @@ class User extends Authenticatable implements JWTSubject
 
     /**
      * Hashes the user password
+     *
      * @param string $passcode
      */
     public function setPassWordAttribute($passcode)
@@ -68,13 +69,12 @@ class User extends Authenticatable implements JWTSubject
     }
 
     /**
+     * A user can submit many surveys
+     *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     * one to many: user can submit many survey responses
      */
-
-    public function surveyResponse()
+    public function surveys()
     {
-        return $this->hasMany(SurveyResponse::class);
+        return $this->hasMany(Survey::class);
     }
-
 }

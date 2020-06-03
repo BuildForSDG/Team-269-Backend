@@ -15,11 +15,11 @@ class CreateResponseOptionsTable extends Migration
     {
         Schema::create('response_options', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('question_id');
+            $table->foreignId('question_id')->constrained()->onDelete('cascade');
             $table->integer('option_value');
             $table->string('option_name');
+            $table->softDeletes();
             $table->timestamps();
-            $table->foreign('question_id')->references('id')->on('questions')->onDelete('cascade');
         });
     }
 

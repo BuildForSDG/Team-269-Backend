@@ -14,12 +14,13 @@ class CreateSurveyResponsesTable extends Migration
     public function up()
     {
         Schema::create('survey_responses', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('response_id');
-            $table->unsignedBigInteger('question_id');
-            $table->string('response');
+            $table->id('id');
+            $table->foreignId('survey_id')->constrained()->onDelete('cascade');
+            $table->foreignId('question_id')->constrained();
+            $table->foreignId('response_option_id')->constrained()->nullable();
+            $table->string('custom_response')->nullable();
+            $table->softDeletes();
             $table->timestamps();
-            $table->foreign('question_id')->references('id')->on('questions')->onDelete('cascade');
         });
     }
 
