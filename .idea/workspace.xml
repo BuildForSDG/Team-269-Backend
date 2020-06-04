@@ -19,13 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd76ae87-9155-42be-a870-c4a6c495c886" name="Default Changelist" comment="feat: define one to many inverse relationship" />
+    <list default="true" id="bd76ae87-9155-42be-a870-c4a6c495c886" name="Default Changelist" comment="chore: add pgsql as default db connection">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -206,7 +208,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590738155909</updated>
-      <workItem from="1590738158462" duration="11489000" />
+      <workItem from="1590738158462" duration="11680000" />
+      <workItem from="1591179035995" duration="2413000" />
+      <workItem from="1591200586960" duration="1910000" />
     </task>
     <task id="LOCAL-00001" summary="chore: change default db connection">
       <created>1590740038797</created>
@@ -306,7 +310,35 @@
       <option name="project" value="LOCAL" />
       <updated>1590751156425</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="chore: add .idea to .gitignore">
+      <created>1591180145820</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1591180145820</updated>
+    </task>
+    <task id="LOCAL-00016" summary="chore: add .idea to .gitignore">
+      <created>1591180301977</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1591180301977</updated>
+    </task>
+    <task id="LOCAL-00017" summary="chore: add .idea to .gitignore">
+      <created>1591183777341</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1591183777341</updated>
+    </task>
+    <task id="LOCAL-00018" summary="chore: add pgsql as default db connection">
+      <created>1591200939990</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1591200939990</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +354,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore: change default db connection" />
@@ -336,6 +369,8 @@
     <MESSAGE value="chore: add alternative SurveyResponse model" />
     <MESSAGE value="feat: define one to many relationship" />
     <MESSAGE value="feat: define one to many inverse relationship" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: define one to many inverse relationship" />
+    <MESSAGE value="chore: add .idea to .gitignore" />
+    <MESSAGE value="chore: add pgsql as default db connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: add pgsql as default db connection" />
   </component>
 </project>
