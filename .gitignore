@@ -35,4 +35,7 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+
+.idea
+.idea/Team-269-Backend.iml
 >>>>>>> 2e08ea3e49d7eca09ba145600fee184ca8bb9fa8

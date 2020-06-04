@@ -60,10 +60,21 @@ class User extends Authenticatable implements JWTSubject
 
     /**
      * Hashes the user password
+     *
      * @param string $passcode
      */
     public function setPassWordAttribute($passcode)
     {
         $this->attributes['password'] = Hash::make($passcode);
+    }
+
+    /**
+     * A user can submit many surveys
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function surveys()
+    {
+        return $this->hasMany(Survey::class);
     }
 }
