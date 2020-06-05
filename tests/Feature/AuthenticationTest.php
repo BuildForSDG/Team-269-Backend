@@ -15,7 +15,7 @@ class AuthenticationTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $this->user = factory(User::class, ['password' => 'password'])->create();
+        $this->user = create(User::class, ['password' => 'password']);
     }
 
     /**

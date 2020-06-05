@@ -75,6 +75,7 @@ The API is hosted on Heroku and can be accessed from the following endpoint
 ## Some useful commands (For Devs)
 
 -   `php artisan test` - to run all the tests
+-   `php artisan test --filter <test_name>` - to run a particular test.
 -   `composer lint` - to run the linter
 -   `composer lint:fix` - to fix the lint errors
 

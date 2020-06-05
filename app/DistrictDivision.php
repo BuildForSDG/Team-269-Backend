@@ -2,9 +2,7 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-
-class DistrictDivision extends Model
+class DistrictDivision extends BaseModel
 {
     /**
      * A district division belongs to a district.
