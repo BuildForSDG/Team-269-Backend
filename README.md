@@ -48,20 +48,24 @@ The API is hosted on Heroku and can be accessed from the following endpoint
 
 ## Available endpoints
 
-| **Type** | **Endpoint**                |
-| -------- | --------------------------- |
-| POST     | `api/v1/auth/login`         |
-| POST     | `api/v1/auth/logout`        |
-| POST     | `api/v1/auth/refreshToken`  |
-| POST     | `api/v1/auth/register`      |
-| PUT      | `api/v1/auth/resetPassword` |
-| GET      | `api/v1/auth/user`          |
-| GET      | `api/v1/user`               |
-| GET      | `api/v1/users`              |
-| POST     | `api/v1/users`              |
-| GET      | `api/v1/users/{user}`       |
-| PUT      | `api/v1/users/{user}`       |
-| DELETE   | `api/v1/users/{user}`       |
+| **Type** | **Endpoint**                  |
+| -------- | ----------------------------- |
+| POST     | `api/v1/auth/login`           |
+| POST     | `api/v1/auth/logout`          |
+| POST     | `api/v1/auth/refreshToken`    |
+| POST     | `api/v1/auth/register`        |
+| PUT      | `api/v1/auth/resetPassword`   |
+| GET      | `api/v1/auth/user`            |
+| GET      | `api/v1/user`                 |
+| GET      | `api/v1/users`                |
+| POST     | `api/v1/users`                |
+| GET      | `api/v1/users/{user}`         |
+| PUT      | `api/v1/users/{user}`         |
+| DELETE   | `api/v1/users/{user}`         |
+| POST     | `api/v1/questions`            |
+| GET      | `api/v1/questions`            |
+| GET      | `api/v1/questions/{question}` |
+| PUT      | `api/v1/questions/{question}` |
 
 ## Test User details
 
