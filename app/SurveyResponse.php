@@ -2,9 +2,7 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-
-class SurveyResponse extends Model
+class SurveyResponse extends BaseModel
 {
     /**
      * A survey response belongs to a question

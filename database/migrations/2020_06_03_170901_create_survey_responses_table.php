@@ -17,6 +17,7 @@ class CreateSurveyResponsesTable extends Migration
             $table->id('id');
             $table->foreignId('survey_id')->constrained()->onDelete('cascade');
             $table->foreignId('question_id')->constrained();
+            $table->foreignId('survey_location_id')->constrained();
             $table->foreignId('response_option_id')->constrained()->nullable();
             $table->string('custom_response')->nullable();
             $table->softDeletes();

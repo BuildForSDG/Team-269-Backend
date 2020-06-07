@@ -2,9 +2,7 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-
-class ResponseOption extends Model
+class ResponseOption extends BaseModel
 {
     /**
      * Get the question to which the response option belongs
