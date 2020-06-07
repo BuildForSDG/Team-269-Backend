@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 
+Route::apiResource('questions', QuestionsController::class)->except('destroy');
+
 Route::middleware('auth:api')->get('/user', 'AuthenticationController@authUser');
 
 // authentication endpoints

@@ -2,9 +2,7 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-
-class Survey extends Model
+class Survey extends BaseModel
 {
     /**
      * A survey is submitted/created by a user

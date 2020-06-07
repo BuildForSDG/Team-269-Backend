@@ -2,9 +2,7 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-
-class District extends Model
+class District extends BaseModel
 {
     /**
      * A district has many divisions
