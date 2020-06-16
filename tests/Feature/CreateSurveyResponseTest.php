@@ -72,7 +72,7 @@ class CreateSurveyResponseTest extends TestCase
      */
     public function a_user_can_update_a_survey_response()
     {
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
         $survey_response_id = create(SurveyResponse::class)->id;
 
         $attributes = make(SurveyResponse::class);

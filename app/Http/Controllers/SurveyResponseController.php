@@ -35,14 +35,23 @@ class SurveyResponseController extends Controller
      */
     public function store(Request $request)
     {
+        /*
         $survey_response = SurveyResponse::create([
             'survey_id' => request('survey_id'),
             'question_id'  => request('question_id'),
             'survey_location_id'  => request('survey_location_id'),
             'response_option_id'  => request('response_option_id'),
             'custom_response'  => request('custom_response'),
-
         ]);
+        */
+        $data = $request->validate([
+            'survey_id' => 'integer|required',
+            'question_id'=> 'integer|required',
+            'survey_location_id'=> 'integer|required',
+            'response_option_id'=> 'integer|required',
+            'custom_response'=> 'sometimes|string'
+        ]);
+        $survey_response = SurveyResponse::create($data);
 
         return response()->json([$survey_response], 201);
     }
