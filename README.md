@@ -66,6 +66,11 @@ The API is hosted on Heroku and can be accessed from the following endpoint
 | GET      | `api/v1/questions`            |
 | GET      | `api/v1/questions/{question}` |
 | PUT      | `api/v1/questions/{question}` |
+| POST     | `api/v1/survey-responses`     |
+| GET      | `api/v1/survey-responses`     |
+| DELETE   | `api/v1/survey-responses/{survey_response}` |
+| PUT      | `api/v1/survey-responses/{survey_response}` |
+| GET      | `api/v1/survey-responses/{survey_response}` |
 
 ## Test User details
 
