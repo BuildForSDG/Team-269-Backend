@@ -9,6 +9,7 @@ use Tests\TestCase;
 class MakeDeleteSurveyResponseTest extends TestCase
 {
     use RefreshDatabase;
+
     /**
      * @test
      */
@@ -24,6 +25,5 @@ class MakeDeleteSurveyResponseTest extends TestCase
         $this->signIn()
             ->deleteJson("api/v1/survey-responses/{$survey_response->id}");
         $this->assertDatabaseMissing('survey_responses', $survey_response->toArray());
-
     }
 }

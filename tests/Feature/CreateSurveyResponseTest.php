@@ -13,7 +13,6 @@ class CreateSurveyResponseTest extends TestCase
     /**
      * @test
      */
-
     public function a_user_can_submit_a_survey_response()
     {
         /**
@@ -30,14 +29,11 @@ class CreateSurveyResponseTest extends TestCase
             ->assertCreated();
 
         $this->assertDatabaseHas('survey_responses', $attributes->toArray());
-
-
     }
 
     /**
      * @test
      */
-
     public function an_unauthenticated_user_cannot_submit_a_survey_response()
     {
         /**
@@ -46,16 +42,14 @@ class CreateSurveyResponseTest extends TestCase
          * The response is not saved to the database
          */
         //$this->withoutExceptionHandling();
-       //$this->expectException();
+        //$this->expectException();
         $survey_response = make(SurveyResponse::class);
 
         $this->postJson('api/v1/survey-responses', $survey_response->toArray())
             ->assertUnauthorized();
 
         $this->assertDatabaseMissing('survey_responses', $survey_response->toArray());
-
     }
-
 
     /**
      * @test
@@ -68,7 +62,7 @@ class CreateSurveyResponseTest extends TestCase
          * Only the custom response filed should be optional
          */
         //$this->withoutExceptionHandling();
-       // $survey_response = make(SurveyResponse::class);
+        // $survey_response = make(SurveyResponse::class);
         //dd($survey_response);
         $this->signIn()
             ->postJson('api/v1/survey-responses', [])
@@ -78,7 +72,7 @@ class CreateSurveyResponseTest extends TestCase
                 'question_id',
                 'survey_location_id',
                 'response_option_id',
-                ]);
+            ]);
     }
 
     /**
@@ -104,7 +98,4 @@ class CreateSurveyResponseTest extends TestCase
 
         $this->assertDatabaseHas('survey_responses', $attributes->toArray());
     }
-
-
-
 }

@@ -16,7 +16,6 @@ class SurveyResponseController extends Controller
         $this->middleware('auth')->only(['store']);
     }
 
-
     /**
      * Display a listing of the resource.
      *
@@ -24,8 +23,7 @@ class SurveyResponseController extends Controller
      */
     public function index()
     {
-        return  SurveyResponse::all();
-
+        return SurveyResponse::all();
     }
 
     /**
@@ -36,13 +34,12 @@ class SurveyResponseController extends Controller
      */
     public function store(Request $request)
     {
-
         $data = $request->validate([
             'survey_id' => 'integer|required',
-            'question_id'=> 'integer|required',
-            'survey_location_id'=> 'integer|required',
-            'response_option_id'=> 'integer|required',
-            'custom_response'=> 'sometimes|string'
+            'question_id' => 'integer|required',
+            'survey_location_id' => 'integer|required',
+            'response_option_id' => 'integer|required',
+            'custom_response' => 'sometimes|string',
         ]);
         $survey_response = SurveyResponse::create($data);
 
@@ -57,7 +54,7 @@ class SurveyResponseController extends Controller
      */
     public function show(SurveyResponse $survey_response)
     {
-        return  $survey_response;
+        return $survey_response;
     }
 
     /**
@@ -71,16 +68,15 @@ class SurveyResponseController extends Controller
     {
         $data = $request->validate([
             'survey_id' => 'integer|required',
-            'question_id'=> 'integer|required',
-            'survey_location_id'=> 'integer|required',
-            'response_option_id'=> 'integer|required',
-            'custom_response'=> 'sometimes|string'
+            'question_id' => 'integer|required',
+            'survey_location_id' => 'integer|required',
+            'response_option_id' => 'integer|required',
+            'custom_response' => 'sometimes|string',
         ]);
         $survey_response->update($data);
 
-        return response(['message'=>'your response was updated'], 200);
+        return response(['message' => 'your response was updated'], 200);
     }
-
 
     /**
      * Remove the specified resource from storage.
@@ -93,7 +89,5 @@ class SurveyResponseController extends Controller
     {
         $survey_response->delete();
         return response()->json(['message' => 'Survey response successfully deleted.'], 201);
-
-
     }
 }

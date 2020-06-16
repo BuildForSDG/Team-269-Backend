@@ -29,7 +29,6 @@ class MakeReadSurveyResponseTest extends TestCase
             ->getJson('api/v1/survey-responses')
             ->assertOK()
             ->assertJson($survey_responses->toArray());
-
     }
 
     /**

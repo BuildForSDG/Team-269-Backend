@@ -18,8 +18,7 @@ class SurveyResponseTest extends TestCase
     {
         //$this->withoutExceptionHandling();
         $question = create(Question::class);
-        $survey_response = create(SurveyResponse::class, ['question_id'=>$question->id]);
+        $survey_response = create(SurveyResponse::class, ['question_id' => $question->id]);
         $this->assertInstanceOf(Question::class, $survey_response->question);
-
     }
 }

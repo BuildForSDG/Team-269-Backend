@@ -46,7 +46,7 @@ $factory->define(Question::class, function (Faker $faker) {
 // ResponseOption
 $factory->define(ResponseOption::class, function (Faker $faker) {
     return [
-        'option_value' => $faker->numberBetween(1,300),
+        'option_value' => $faker->numberBetween(1, 300),
         'option_name' => $faker->sentence,
         'question_id' => function () {
             return factory(Question::class)->create()->id;
@@ -75,6 +75,6 @@ $factory->define(SurveyResponse::class, function (Faker $faker) {
         'response_option_id' => function () {
             return factory(ResponseOption::class)->create()->id;
         },
-        'custom_response' => $faker->sentence
+        'custom_response' => $faker->sentence,
     ];
 });

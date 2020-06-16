@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd76ae87-9155-42be-a870-c4a6c495c886" name="Default Changelist" comment="docs: add survey responses comments">
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-    </list>
+    <list default="true" id="bd76ae87-9155-42be-a870-c4a6c495c886" name="Default Changelist" comment="chore: add pgsql as default db" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -234,7 +232,7 @@
       <workItem from="1591179035995" duration="2413000" />
       <workItem from="1591200586960" duration="1910000" />
       <workItem from="1591613600669" duration="13611000" />
-      <workItem from="1592215103889" duration="38038000" />
+      <workItem from="1592215103889" duration="38355000" />
     </task>
     <task id="LOCAL-00001" summary="chore: change default db connection">
       <created>1590740038797</created>
@@ -453,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592305382544</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="chore: add pgsql as default db">
+      <created>1592305528820</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1592305528820</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +477,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: add config/database.php" />
     <MESSAGE value="chore: add Question model" />
     <MESSAGE value="chore: add questions migration" />
     <MESSAGE value="chore: add response_options migration" />
@@ -497,7 +501,8 @@
     <MESSAGE value="chore: rename test" />
     <MESSAGE value="docs: add survey responses API routes" />
     <MESSAGE value="docs: add survey responses comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: add survey responses comments" />
+    <MESSAGE value="chore: add pgsql as default db" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: add pgsql as default db" />
   </component>
   <component name="WindowStateProjectService">
     <state x="270" y="19" key="#CLI_Interpreters" timestamp="1591968418398">
