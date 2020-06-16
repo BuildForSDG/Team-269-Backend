@@ -17,7 +17,6 @@ Route::get('/', 'HomeController@index');
 
 Route::apiResource('questions', QuestionsController::class)->except('destroy');
 
-//Route::post('/survey-responses', [SurveyResponseController::class, 'store']);
 Route::apiResource('/survey-responses', SurveyResponseController::class);
 
 Route::middleware('auth:api')->get('/user', 'AuthenticationController@authUser');

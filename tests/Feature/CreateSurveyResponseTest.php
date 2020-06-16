@@ -16,15 +16,19 @@ class CreateSurveyResponseTest extends TestCase
 
     public function a_user_can_submit_a_survey_response()
     {
+        /**
+         * Given a signed in user
+         * If they try to submit/post a survey response
+         * The response is created and exists in the database.
+         */
         //$this->withoutExceptionHandling();
 
         //create survey response in memory
         $attributes = make(SurveyResponse::class);
-        //given an authenticated user trying to create a survey response
         $this->signIn()
             ->postJson('api/v1/survey-responses', $attributes->toArray())
             ->assertCreated();
-        //the response is created and persists
+
         $this->assertDatabaseHas('survey_responses', $attributes->toArray());
 
 
@@ -36,6 +40,11 @@ class CreateSurveyResponseTest extends TestCase
 
     public function an_unauthenticated_user_cannot_submit_a_survey_response()
     {
+        /**
+         * Given a user who is not signed in
+         * When they try to submit/post a survey response
+         * The response is not saved to the database
+         */
         //$this->withoutExceptionHandling();
        //$this->expectException();
         $survey_response = make(SurveyResponse::class);
@@ -53,6 +62,11 @@ class CreateSurveyResponseTest extends TestCase
      */
     public function a_survey_response_requires_all_fields_except_the_custom_response()
     {
+        /**
+         * Given a signed in user
+         * When they try to submit/post a survey response
+         * Only the custom response filed should be optional
+         */
         //$this->withoutExceptionHandling();
        // $survey_response = make(SurveyResponse::class);
         //dd($survey_response);
@@ -72,6 +86,11 @@ class CreateSurveyResponseTest extends TestCase
      */
     public function a_user_can_update_a_survey_response()
     {
+        /**
+         * Given a signed in user
+         * When they try to update an existing survey response
+         * The changes successfully save to the database
+         */
         //$this->withoutExceptionHandling();
         $survey_response_id = create(SurveyResponse::class)->id;
 
@@ -85,7 +104,6 @@ class CreateSurveyResponseTest extends TestCase
 
         $this->assertDatabaseHas('survey_responses', $attributes->toArray());
     }
-
 
 
 
