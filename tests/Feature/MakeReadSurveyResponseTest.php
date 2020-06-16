@@ -6,7 +6,7 @@ use App\SurveyResponse;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class ReadSurveyResponse extends TestCase
+class MakeReadSurveyResponseTest extends TestCase
 {
     use RefreshDatabase;
 
@@ -15,15 +15,14 @@ class ReadSurveyResponse extends TestCase
      */
     public function a_user_can_get_survey_responses()
     {
-        //$this->withoutExceptionHandling();
-       // $this->expectException();
+        $this->withoutExceptionHandling();
+        // $this->expectException();
         $survey_responses = create(SurveyResponse::class, [], 3);
         //dd($survey_responses->toArray());
 
         $this->signIn()
             ->getJson('api/v1/survey-responses')
             ->assertOK()
-            ->assertJson()
             ->assertJson($survey_responses->toArray());
 
     }
@@ -33,7 +32,7 @@ class ReadSurveyResponse extends TestCase
      */
     public function a_user_can_get_a_survey_response()
     {
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
         $survey_response = create(SurveyResponse::class);
         $this->signIn()
             ->getJson("api/v1/survey-responses/{$survey_response->id}")
