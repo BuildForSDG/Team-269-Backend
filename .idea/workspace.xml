@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd76ae87-9155-42be-a870-c4a6c495c886" name="Default Changelist" comment="feat: add survey response update functionality">
+    <list default="true" id="bd76ae87-9155-42be-a870-c4a6c495c886" name="Default Changelist" comment="fix: add get all survey responses">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SurveyResponseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SurveyResponseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/CreateSurveyResponseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CreateSurveyResponseTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +232,7 @@
       <workItem from="1591179035995" duration="2413000" />
       <workItem from="1591200586960" duration="1910000" />
       <workItem from="1591613600669" duration="13611000" />
-      <workItem from="1592215103889" duration="30825000" />
+      <workItem from="1592215103889" duration="32164000" />
     </task>
     <task id="LOCAL-00001" summary="chore: change default db connection">
       <created>1590740038797</created>
@@ -381,7 +381,28 @@
       <option name="project" value="LOCAL" />
       <updated>1592293065783</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fix: add survey response belongs to question">
+      <created>1592298318313</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1592298318313</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix: add survey response belongs to question">
+      <created>1592298329276</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1592298329276</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fix: add get all survey responses">
+      <created>1592299358601</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1592299358601</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +438,9 @@
     <MESSAGE value="feat: add response controller" />
     <MESSAGE value="feat: add survey response" />
     <MESSAGE value="feat: add survey response update functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add survey response update functionality" />
+    <MESSAGE value="fix: add survey response belongs to question" />
+    <MESSAGE value="fix: add get all survey responses" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: add get all survey responses" />
   </component>
   <component name="WindowStateProjectService">
     <state x="270" y="19" key="#CLI_Interpreters" timestamp="1591968418398">

@@ -24,7 +24,8 @@ class SurveyResponseController extends Controller
      */
     public function index()
     {
-        return SurveyResponse::all();
+        return  SurveyResponse::all();
+
     }
 
     /**
@@ -35,15 +36,7 @@ class SurveyResponseController extends Controller
      */
     public function store(Request $request)
     {
-        /*
-        $survey_response = SurveyResponse::create([
-            'survey_id' => request('survey_id'),
-            'question_id'  => request('question_id'),
-            'survey_location_id'  => request('survey_location_id'),
-            'response_option_id'  => request('response_option_id'),
-            'custom_response'  => request('custom_response'),
-        ]);
-        */
+
         $data = $request->validate([
             'survey_id' => 'integer|required',
             'question_id'=> 'integer|required',
@@ -92,11 +85,15 @@ class SurveyResponseController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param SurveyResponse $survey_response
+     * @return \Illuminate\Http\JsonResponse
+     * @throws \Exception
      */
-    public function destroy($id)
+    public function destroy(SurveyResponse $survey_response)
     {
-        //
+        $survey_response->delete();
+        return response()->json(['message' => 'Survey response successfully deleted.'], 201);
+
+
     }
 }
