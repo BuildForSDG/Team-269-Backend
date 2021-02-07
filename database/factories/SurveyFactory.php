@@ -3,6 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\District;
+use App\Survey;
 use App\SurveyLocation;
 use App\Question;
 use App\ResponseOption;
@@ -38,13 +39,14 @@ $factory->define(SurveyLocation::class, function (Faker $faker) {
 $factory->define(Question::class, function (Faker $faker) {
     return [
         'statement' => $faker->sentence,
-        'name' => $faker->unique()->word,
+        //'name' => $faker->unique()->word,
+        'name' => $faker->word,
     ];
 });
 // ResponseOption
 $factory->define(ResponseOption::class, function (Faker $faker) {
     return [
-        'option_value' => $faker->word,
+        'option_value' => $faker->numberBetween(1, 300),
         'option_name' => $faker->sentence,
         'question_id' => function () {
             return factory(Question::class)->create()->id;
@@ -73,5 +75,6 @@ $factory->define(SurveyResponse::class, function (Faker $faker) {
         'response_option_id' => function () {
             return factory(ResponseOption::class)->create()->id;
         },
+        'custom_response' => $faker->sentence,
     ];
 });

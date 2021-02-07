@@ -15,10 +15,11 @@ class CreateSurveyResponsesTable extends Migration
     {
         Schema::create('survey_responses', function (Blueprint $table) {
             $table->id('id');
-            $table->foreignId('survey_id')->constrained()->onDelete('cascade');
-            $table->foreignId('question_id')->constrained();
-            $table->foreignId('survey_location_id')->constrained();
-            $table->foreignId('response_option_id')->constrained()->nullable();
+            //$table->foreignId('survey_id')->constrained()->onDelete('cascade')->nullable();
+            $table->foreignId('survey_id')->constrained('surveys');
+            $table->foreignId('question_id')->constrained('questions');
+            $table->foreignId('survey_location_id')->constrained('survey_locations');
+            $table->foreignId('response_option_id')->constrained('response_options')->nullable();
             $table->string('custom_response')->nullable();
             $table->softDeletes();
             $table->timestamps();
